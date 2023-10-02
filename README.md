@@ -1,1 +1,1 @@
-A repo to explore the github API
+Updated readme file
