@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: setters
+  annotations:
+    config.kubernetes.io/local-config: 'true'
+    internal.kpt.dev/upstream-identifier: '|ConfigMap|default|setters'
+data:
+  billing-id: 016B6D-6AB281-505940
+  project-dept: ph
+  project-env: env
+  project-vanity-name: idc
+  project-unique-id: 01hm9x9f491va8s7v15smwwbej
+  project-classification: idfc
+  parent-folder-id: '712587760826'
+  iam-owners: |
+    - member: "user:momo"
+    - member: "user:kitcat"
+    - member: "user:oreo"
+    - member: "user:sid"
+    - member: "user:rick"
+    - member: "user:morty"
