@@ -1,0 +1,17 @@
+apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+kind: Project
+metadata:
+  # This should be the same as project ID
+  name: "phenv-01hmb7descc3d89hq5dnpmeytm" # kpt-set: ${project-dept}${project-env}-${project-unique-id}
+  namespace: "config-control"
+  labels:
+    vanity-name: "phenv-test" # kpt-set: ${project-dept}${project-env}-${project-vanity-name}
+    classification: dummy # kpt-set: ${project-classification}
+  annotations:
+    cnrm.cloud.google.com/blueprint: 'kpt-fn'
+spec:
+  name: phenv-test # kpt-set: ${project-dept}${project-env}-${project-vanity-name}
+  billingAccountRef:
+    external: "016B6D-6AB281-505940" # kpt-set: ${billing-id}
+  folderRef:
+    name: ph-01hmb7descc3d89hq5dnpmeytm-folder # kpt-set: ${project-dept}-${project-unique-id}-folder
